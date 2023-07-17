@@ -1,0 +1,14 @@
+.pay{
+    background-color: #e6324b;
+    color: #f2e3c6;
+    width: 120px;
+    height: 35px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 0;
+    font-size: 15px;
+    margin-top: 4px;
+}
