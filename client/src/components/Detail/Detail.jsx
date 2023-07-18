@@ -7,7 +7,7 @@ function Detail() {
   const { id } = useParams();
   const [comic, setComic] = React.useState({});
   async function fetcIdComics() {
-    const data = await axios.get(`http://localhost:3001/comics/${id}`);
+    const data = await axios.get(`https://marvel-back-hc4s.onrender.com/comics/${id}`);
     return data.data;
   }
   React.useEffect(() => {

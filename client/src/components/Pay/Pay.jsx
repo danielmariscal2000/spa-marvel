@@ -7,7 +7,7 @@ function Pay(props) {
             name:props.name,
             price:props.price
         }
-     const url  = await axios.post('http://localhost:3001/pay',params)
+     const url  = await axios.post('https://marvel-back-hc4s.onrender.com/pay',params)
      console.log(url.data);
    window.location.href=url.data.url
     }

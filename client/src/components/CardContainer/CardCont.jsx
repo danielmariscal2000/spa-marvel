@@ -6,7 +6,7 @@ function CardCont() {
   const [comics,setComics]=React.useState([]);
   
   async function fetchComics(){
-    let data=await axios.get("http://localhost:3001/comics");
+    let data=await axios.get("https://marvel-back-hc4s.onrender.com/comics");
     return data.data;
    }
    React.useEffect(() => {
