@@ -25,6 +25,8 @@
 .img{
     object-fit: cover;
     border-radius: 7px;
+    width:280px;
+    height:380px;
 }
 .conText{
     height: 100px;
@@ -33,3 +35,25 @@
 .link{
     text-decoration: none;
 }
+.containerImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .card{
+        width: 300px;
+    }
+    .img{
+        object-fit: cover;
+        border-radius: 7px;
+        width:220px;
+        height:350px;
+    }
+    .containerImg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }

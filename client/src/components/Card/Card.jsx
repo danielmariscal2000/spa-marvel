@@ -10,12 +10,12 @@ function Card({data}) {
             <p className={style.title}>{data.title}</p>
             <p className={style.author}>Autor : {data.author}</p>
         </div>
-        <div>
-            <img className={style.img} src={data.img}alt={data.title} width="280px" height="380px" />
+        <div className={style.containerImg}>
+            <img className={style.img} src={data.img}alt={data.title} />
         </div>
         </Link>
         <div>
-        <Pay price={data.price}></Pay>
+        <Pay price={data.price} name={data.title}></Pay>
         </div>
     </div>
   )

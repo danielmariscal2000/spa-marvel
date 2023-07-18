@@ -30,6 +30,16 @@
     border-bottom: 2px solid #2b2b2b;
     padding-bottom: 17px;
 }
+.a2{
+    margin-top: 15px;
+    text-decoration: none;
+    color:#2b2b2b;
+    font-size: 25px;
+    line-height: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 17px;
+}
 .input{
      width: 200px;
      height: 30px;
@@ -50,6 +60,7 @@
     text-decoration: none;
     border: 0;
     font-size: 15px;
+    margin-top: -50px;
 }
 .navtext{
     display: flex;
@@ -61,4 +72,25 @@
 }
 .input::placeholder{
     text-align: center;
+}
+.search{
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: repeat(2, 50px);
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .a{
+        display:none ;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .a2{
+        font-size: 18px;
+        height: 35px;
+    }
 }

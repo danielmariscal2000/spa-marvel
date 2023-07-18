@@ -16,10 +16,10 @@ function Detail() {
       setComic(data);
     }
     fetch();
-  }, []);
+  }, [id]);
   return (
     <div className={style.container}>
-      <div>
+      <div className={style.biblio}>
         <h1>{comic.title}</h1>
         <h2>{comic.author}</h2>
         <p>{comic.description}</p>

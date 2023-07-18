@@ -1,0 +1,10 @@
+.comics {
+    height: 62px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+  }
+  .button{
+    width:200px;
+  }
+  

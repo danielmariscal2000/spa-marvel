@@ -157,4 +157,29 @@ router.get('/comics/:id', (req, res) => {
   }
 });
 
+const Stripe = require("stripe");
+require("dotenv").config();
+const { KEY } = process.env;
+
+router.post("/pay", async (req, res) => {
+  const stripe = new Stripe(KEY);
+  const session = await stripe.checkout.sessions.create({
+    line_items: [
+      {
+        price_data: {
+          product_data: {
+            name: `${req.body.name}`,
+          },
+          currency: "usd",
+          unit_amount: parseInt(req.body.price * 100), // Convertir a centavos
+        },
+        quantity: 1,
+      },
+    ],
+    mode: "payment",
+    success_url: "http://localhost:3000/",
+    cancel_url: "http://localhost:3000/",
+  });
+  return res.json({ url: session.url });
+});
 module.exports = router;
