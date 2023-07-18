@@ -19,7 +19,9 @@ function Detail() {
       setComic(data);
     }
     fetch();
-  }, []); // <-- Arreglo de dependencias vacío
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
+  
 
   return (
     <div className={style.container}>
