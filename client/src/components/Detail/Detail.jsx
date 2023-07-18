@@ -16,7 +16,7 @@ function Detail() {
       setComic(data);
     }
     fetch();
-  }, [id]);
+  }, [fetcIdComics]);
   return (
     <div className={style.container}>
       <div className={style.biblio}>

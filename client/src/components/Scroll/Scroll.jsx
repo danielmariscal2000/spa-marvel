@@ -7,7 +7,7 @@ function Scroll({ comics }) {
   
   React.useEffect(() => {
     setComic(comics)
-  }, [comic]);
+  }, [comics]);
 
    const handleOnClick=(e)=>{
       setComic([]);
